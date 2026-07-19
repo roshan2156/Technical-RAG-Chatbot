@@ -1,0 +1,14 @@
+[
+    {
+        "question": "What is FastAPI?",
+        "answer": "FastAPI is a modern Python framework for building APIs.",
+        "rating": 5,
+        "comment": "Very helpful answer."
+    },
+    {
+        "question": "string",
+        "answer": "string",
+        "rating": 0,
+        "comment": "string"
+    }
+]
