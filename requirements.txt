@@ -4,7 +4,7 @@ uvicorn==0.30.6
 langchain==0.3.27
 langchain-core==0.3.75
 langchain-community==0.3.29
-langchain-huggingface==0.3.1
+langchain-huggingface==0.3.1 --no-deps  # <--- ADD THIS FLAG
 langgraph==0.6.6
 
 chromadb==0.5.5
