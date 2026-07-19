@@ -358,28 +358,26 @@ The `retry_count` field ensures the workflow retries retrieval only once before 
 
 # Chunking Strategy
 
-The documentation corpus is loaded from the `documents/` directory and split using LangChain's **RecursiveCharacterTextSplitter** before generating embeddings.
+The technical documentation is loaded from the `documents/` directory and split using LangChain's **RecursiveCharacterTextSplitter** before generating embeddings.
 
-The splitter divides documents into overlapping chunks to preserve context between adjacent sections while maintaining efficient retrieval.
+To preserve context while maintaining efficient retrieval, overlapping text chunks are created with the following configuration:
 
-**Update the values below to match your implementation:**
+- **Chunk Size:** 1000 characters
+- **Chunk Overlap:** 200 characters
 
-- Chunk Size: **1000**
-- Chunk Overlap: **200**
+This strategy ensures that important information spanning chunk boundaries is retained, improving the quality of semantic retrieval during question answering.
 
 ---
 
 # Embedding Strategy
 
-Document chunks are converted into dense vector embeddings using a HuggingFace Sentence Transformer model.
+Document chunks are converted into dense vector embeddings using the HuggingFace Sentence Transformers model:
 
-Both user queries and document chunks are embedded into the same vector space, enabling semantic similarity search through ChromaDB instead of exact keyword matching.
+**Model:** `sentence-transformers/all-MiniLM-L6-v2`
 
-**Update this with your actual embedding model**, for example:
+Both document chunks and user queries are embedded into the same vector space, enabling ChromaDB to perform semantic similarity search instead of exact keyword matching. This allows the chatbot to retrieve relevant information even when the user's query is phrased differently from the indexed documentation.
 
-```
-sentence-transformers/all-MiniLM-L6-v2
-```
+The `all-MiniLM-L6-v2` model was chosen because it is lightweight, fast, and provides strong semantic retrieval performance, making it well suited for local Retrieval-Augmented Generation (RAG) applications.
 
 ---
 
