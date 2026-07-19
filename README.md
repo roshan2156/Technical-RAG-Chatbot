@@ -420,13 +420,13 @@ Instead of immediately returning "No Answer", the chatbot retries retrieval usin
 <img width="752" height="296" alt="Test query(2)- Positive Answer" src="https://github.com/user-attachments/assets/78eb695d-55bd-46be-8f10-3fd61d48e6b9" /> 
 <img width="1611" height="755" alt="Test query(3)- Negative Answer" src="https://github.com/user-attachments/assets/752b9d8d-8724-48e2-9508-a310d7eb9171" /> 
 <img width="1592" height="681" alt="Test query(4)- Negative Answer" src="https://github.com/user-attachments/assets/0341c651-45b0-4301-8988-9e8814ca4f10" />
-- #### /ingest
+
 <img width="752" height="282" alt="POST ingest (1)" src="https://github.com/user-attachments/assets/4eeaf53a-6518-4dfd-b218-69e082ffff4f" /> 
 <img width="752" height="395" alt="POST ingest (2)" src="https://github.com/user-attachments/assets/0e2960b3-261e-4332-bff1-23f084fc71be" />
-- #### /documents
+
 <img width="752" height="292" alt="Test documents (1)" src="https://github.com/user-attachments/assets/3be726b5-350b-4ee7-b168-79e4db33c7b6" /> 
 <img width="752" height="329" alt="Test documents (2)" src="https://github.com/user-attachments/assets/9bf50cfa-fd99-4ef0-b27e-037a85a09263" />
-- #### /feedback
+
 <img width="752" height="361" alt="POST feedback (1)" src="https://github.com/user-attachments/assets/93f69235-20fe-45c8-b08a-b2a445a9fae8" /> 
 <img width="752" height="406" alt="POST feedback (2)" src="https://github.com/user-attachments/assets/ee1b670f-a569-4531-8965-75baf53a14d8" />
   
