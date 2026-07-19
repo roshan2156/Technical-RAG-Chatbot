@@ -229,6 +229,10 @@ Sources:
 - fastapi.md"
 }
 ```
+<img width="752" height="341" alt="Test query (1)- Postive answer" src="https://github.com/user-attachments/assets/9f69f3a6-a544-49fb-8738-ade93325478c" />
+<img width="752" height="296" alt="Test query(2)- Positive Answer" src="https://github.com/user-attachments/assets/78eb695d-55bd-46be-8f10-3fd61d48e6b9" />
+<img width="1611" height="755" alt="Test query(3)- Negative Answer" src="https://github.com/user-attachments/assets/752b9d8d-8724-48e2-9508-a310d7eb9171" />
+<img width="1592" height="681" alt="Test query(4)- Negative Answer" src="https://github.com/user-attachments/assets/0341c651-45b0-4301-8988-9e8814ca4f10" />
 
 ---
 
