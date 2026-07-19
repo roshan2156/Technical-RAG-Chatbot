@@ -5,7 +5,7 @@ import requests
 # Configuration
 # ==========================================================
 
-API_URL = "http://127.0.0.1:8000/query"
+API_URL = "https://technical-rag-chatbot-1.onrender.com/query"
 
 st.set_page_config(
     page_title="Technical RAG Chatbot",
@@ -41,7 +41,8 @@ if st.button("Ask"):
 
                 response = requests.post(
                     API_URL,
-                    json={"question": question}
+                    json={"question": question},
+                    timeout=60
                 )
 
                 if response.status_code == 200:
@@ -49,13 +50,13 @@ if st.button("Ask"):
                     result = response.json()
 
                     st.success("Answer")
-
-                    st.markdown(result["answer"])
+                    st.markdown(result.get("answer", "No answer returned."))
 
                 else:
 
                     st.error(f"API Error: {response.status_code}")
+                    st.write(response.text)
 
             except Exception as e:
 
-                st.error(str(e))
+                st.error(f"Connection Error: {e}")
