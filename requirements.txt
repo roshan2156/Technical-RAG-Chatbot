@@ -1,4 +1,3 @@
-# ADD THESE TO THE VERY TOP OF YOUR REQUIREMENTS.TXT
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.2.0+cpu
 
@@ -16,7 +15,6 @@ chromadb==0.5.5
 sentence-transformers==3.0.1
 transformers>=4.44.0
 huggingface-hub>=0.24.0
-# REMOVED: torch>=2.2.0 (It is now at the top)
 
 langchain-groq==0.2.0
 groq>=0.9.0
