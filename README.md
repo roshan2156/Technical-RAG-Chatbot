@@ -344,14 +344,13 @@ The splitter divides documents into overlapping chunks to preserve context betwe
 
 # Embedding Strategy
 
-Document chunks are converted into dense vector embeddings using a HuggingFace Sentence Transformer model.
+Document chunks are converted into dense vector embeddings using the **HuggingFace Sentence Transformer** model:
 
-Both user queries and document chunks are embedded into the same vector space, enabling semantic similarity search through ChromaDB instead of exact keyword matching.
+**Model:** `sentence-transformers/all-MiniLM-L6-v2`
 
-**Update this with your actual embedding model**, for example:
+Both document chunks and user queries are embedded into the same vector space, allowing ChromaDB to perform semantic similarity search rather than exact keyword matching. This enables the chatbot to retrieve relevant information even when the user's wording differs from the original documentation.
 
-```
-sentence-transformers/all-MiniLM-L6-v2
+The `all-MiniLM-L6-v2` model was chosen because it is lightweight, fast, and provides strong semantic retrieval performance, making it well-suited for a local Retrieval-Augmented Generation (RAG) application.
 ```
 
 ---
