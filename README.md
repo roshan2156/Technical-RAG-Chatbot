@@ -338,6 +338,24 @@ This workflow ensures that responses are grounded in the indexed documentation a
 
 ---
 
+## LangGraph State
+
+The workflow shares information between nodes using a common state object.
+
+The state contains:
+
+- `question` – Original user query
+- `rewritten_question` – Query after rewriting
+- `documents` – Retrieved document chunks
+- `filtered_documents` – Relevant documents after grading
+- `answer` – Final generated response
+- `sources` – Source document names
+- `retry_count` – Tracks retrieval retry attempts
+
+The `retry_count` field ensures the workflow retries retrieval only once before returning a safe fallback response.
+
+---
+
 # Chunking Strategy
 
 The documentation corpus is loaded from the `documents/` directory and split using LangChain's **RecursiveCharacterTextSplitter** before generating embeddings.
