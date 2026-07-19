@@ -248,6 +248,9 @@ Indexes all documentation into ChromaDB.
 }
 ```
 
+<img width="752" height="282" alt="POST ingest (1)" src="https://github.com/user-attachments/assets/4eeaf53a-6518-4dfd-b218-69e082ffff4f" />
+<img width="752" height="395" alt="POST ingest (2)" src="https://github.com/user-attachments/assets/0e2960b3-261e-4332-bff1-23f084fc71be" />
+
 ---
 
 ## GET /documents
@@ -268,6 +271,8 @@ Returns all indexed documents.
   ]
 }
 ```
+<img width="752" height="292" alt="Test documents (1)" src="https://github.com/user-attachments/assets/3be726b5-350b-4ee7-b168-79e4db33c7b6" />
+<img width="752" height="329" alt="Test documents (2)" src="https://github.com/user-attachments/assets/9bf50cfa-fd99-4ef0-b27e-037a85a09263" />
 
 ---
 
@@ -293,6 +298,8 @@ Stores user feedback.
   "message": "Feedback stored successfully."
 }
 ```
+<img width="752" height="361" alt="POST feedback (1)" src="https://github.com/user-attachments/assets/93f69235-20fe-45c8-b08a-b2a445a9fae8" />
+<img width="752" height="406" alt="POST feedback (2)" src="https://github.com/user-attachments/assets/ee1b670f-a569-4531-8965-75baf53a14d8" />
 
 ---
 
@@ -393,13 +400,10 @@ Instead of immediately returning "No Answer", the chatbot retries retrieval usin
 
 ---
 
-## Demo
-
-The GIF below demonstrates the Technical RAG Chatbot in action, showing a user query and the generated response.
-
-![Technical RAG Chatbot Demo](Project%20Images/demo.gif)
-<img width="800" height="425" alt="demo mp4 (1)" src="https://github.com/user-attachments/assets/7ef57ec3-91e4-4358-9aba-207bd0b72d5a" />
-
+## Streamlit Interface
+<img width="1877" height="820" alt="Technical RAG Chatbot (1) Postive Answer" src="https://github.com/user-attachments/assets/b62784b0-a173-4b48-9fa1-e10d39b0cefd" />
+<img width="1770" height="502" alt="Technical RAG Chatbot (2) Negative Answer" src="https://github.com/user-attachments/assets/b43880a6-bf9d-4fba-8b07-16597227fae0" />
+<img width="1887" height="757" alt="Technical RAG Chatbot " src="https://github.com/user-attachments/assets/62739f36-64bc-418e-ad48-716604ae65f8" />
 
 ---
 
