@@ -10,7 +10,6 @@ from .schemas import (
 )
 
 from app.graph.workflow import graph
-from app.ingestion.ingest import ingest_documents
 
 app = FastAPI(
     title="Technical RAG Chatbot",
