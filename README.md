@@ -229,9 +229,9 @@ Sources:
 - fastapi.md"
 }
 ```
-<img width="752" height="341" alt="Test query (1)- Postive answer" src="https://github.com/user-attachments/assets/9f69f3a6-a544-49fb-8738-ade93325478c" />
-<img width="752" height="296" alt="Test query(2)- Positive Answer" src="https://github.com/user-attachments/assets/78eb695d-55bd-46be-8f10-3fd61d48e6b9" />
-<img width="1611" height="755" alt="Test query(3)- Negative Answer" src="https://github.com/user-attachments/assets/752b9d8d-8724-48e2-9508-a310d7eb9171" />
+<img width="752" height="341" alt="Test query (1)- Postive answer" src="https://github.com/user-attachments/assets/9f69f3a6-a544-49fb-8738-ade93325478c" /> 
+<img width="752" height="296" alt="Test query(2)- Positive Answer" src="https://github.com/user-attachments/assets/78eb695d-55bd-46be-8f10-3fd61d48e6b9" /> 
+<img width="1611" height="755" alt="Test query(3)- Negative Answer" src="https://github.com/user-attachments/assets/752b9d8d-8724-48e2-9508-a310d7eb9171" /> 
 <img width="1592" height="681" alt="Test query(4)- Negative Answer" src="https://github.com/user-attachments/assets/0341c651-45b0-4301-8988-9e8814ca4f10" />
 
 ---
@@ -247,8 +247,7 @@ Indexes all documentation into ChromaDB.
   "message": "Documents indexed successfully."
 }
 ```
-
-<img width="752" height="282" alt="POST ingest (1)" src="https://github.com/user-attachments/assets/4eeaf53a-6518-4dfd-b218-69e082ffff4f" />
+<img width="752" height="282" alt="POST ingest (1)" src="https://github.com/user-attachments/assets/4eeaf53a-6518-4dfd-b218-69e082ffff4f" /> 
 <img width="752" height="395" alt="POST ingest (2)" src="https://github.com/user-attachments/assets/0e2960b3-261e-4332-bff1-23f084fc71be" />
 
 ---
@@ -271,7 +270,7 @@ Returns all indexed documents.
   ]
 }
 ```
-<img width="752" height="292" alt="Test documents (1)" src="https://github.com/user-attachments/assets/3be726b5-350b-4ee7-b168-79e4db33c7b6" />
+<img width="752" height="292" alt="Test documents (1)" src="https://github.com/user-attachments/assets/3be726b5-350b-4ee7-b168-79e4db33c7b6" /> 
 <img width="752" height="329" alt="Test documents (2)" src="https://github.com/user-attachments/assets/9bf50cfa-fd99-4ef0-b27e-037a85a09263" />
 
 ---
@@ -298,8 +297,7 @@ Stores user feedback.
   "message": "Feedback stored successfully."
 }
 ```
-<img width="752" height="361" alt="POST feedback (1)" src="https://github.com/user-attachments/assets/93f69235-20fe-45c8-b08a-b2a445a9fae8" />
-<img width="752" height="406" alt="POST feedback (2)" src="https://github.com/user-attachments/assets/ee1b670f-a569-4531-8965-75baf53a14d8" />
+<img width="752" height="361" alt="POST feedback (1)" src="https://github.com/user-attachments/assets/93f69235-20fe-45c8-b08a-b2a445a9fae8" /> <img width="752" height="406" alt="POST feedback (2)" src="https://github.com/user-attachments/assets/ee1b670f-a569-4531-8965-75baf53a14d8" />
 
 ---
 
@@ -355,13 +353,14 @@ The splitter divides documents into overlapping chunks to preserve context betwe
 
 # Embedding Strategy
 
-Document chunks are converted into dense vector embeddings using the **HuggingFace Sentence Transformer** model:
+Document chunks are converted into dense vector embeddings using a HuggingFace Sentence Transformer model.
 
-**Model:** `sentence-transformers/all-MiniLM-L6-v2`
+Both user queries and document chunks are embedded into the same vector space, enabling semantic similarity search through ChromaDB instead of exact keyword matching.
 
-Both document chunks and user queries are embedded into the same vector space, allowing ChromaDB to perform semantic similarity search rather than exact keyword matching. This enables the chatbot to retrieve relevant information even when the user's wording differs from the original documentation.
+**Update this with your actual embedding model**, for example:
 
-The `all-MiniLM-L6-v2` model was chosen because it is lightweight, fast, and provides strong semantic retrieval performance, making it well-suited for a local Retrieval-Augmented Generation (RAG) application.
+```
+sentence-transformers/all-MiniLM-L6-v2
 ```
 
 ---
@@ -401,9 +400,9 @@ Instead of immediately returning "No Answer", the chatbot retries retrieval usin
 ---
 
 ## Streamlit Interface
-<img width="1877" height="820" alt="Technical RAG Chatbot (1) Postive Answer" src="https://github.com/user-attachments/assets/b62784b0-a173-4b48-9fa1-e10d39b0cefd" />
-<img width="1770" height="502" alt="Technical RAG Chatbot (2) Negative Answer" src="https://github.com/user-attachments/assets/b43880a6-bf9d-4fba-8b07-16597227fae0" />
-<img width="1887" height="757" alt="Technical RAG Chatbot " src="https://github.com/user-attachments/assets/62739f36-64bc-418e-ad48-716604ae65f8" />
+<img width="1877" height="820" alt="Technical RAG Chatbot (1) Postive Answer" src="https://github.com/user-attachments/assets/ce26b5f6-0ed0-4321-bbd7-e8f693d4e98d" />
+<img width="1770" height="502" alt="Technical RAG Chatbot (2) Negative Answer" src="https://github.com/user-attachments/assets/7c90768e-6beb-47c8-b608-9ecf75d148d6" />
+<img width="1887" height="757" alt="Technical RAG Chatbot " src="https://github.com/user-attachments/assets/c3c047bf-3811-4cbb-aed9-371290c4e880" />
 
 ---
 
