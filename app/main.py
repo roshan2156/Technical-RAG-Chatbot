@@ -61,20 +61,6 @@ def query(request: QueryRequest):
 
 
 # ==========================================================
-# Ingest Endpoint
-# ==========================================================
-
-@app.post("/ingest")
-def ingest():
-
-    ingest_documents()
-
-    return {
-        "message": "Documents indexed successfully."
-    }
-
-
-# ==========================================================
 # Documents Endpoint
 # ==========================================================
 
