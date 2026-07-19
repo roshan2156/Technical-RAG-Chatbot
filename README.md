@@ -1,6 +1,6 @@
 # Technical RAG Chatbot
 
-## Project Overview
+# Project Overview
 
 This project is a **Technical Retrieval-Augmented Generation (RAG) Chatbot** built using **LangGraph**, **FastAPI**, **ChromaDB**, and **Groq LLM**. The chatbot answers questions only from an indexed technical documentation corpus using Retrieval-Augmented Generation (RAG).
 
