@@ -389,6 +389,16 @@ Instead of immediately returning "No Answer", the chatbot retries retrieval usin
 
 ---
 
+## Demo
+
+The GIF below demonstrates the Technical RAG Chatbot in action, showing a user query and the generated response.
+
+![Technical RAG Chatbot Demo](Project%20Images/demo.gif)
+<img width="800" height="425" alt="demo mp4 (1)" src="https://github.com/user-attachments/assets/7ef57ec3-91e4-4358-9aba-207bd0b72d5a" />
+
+
+---
+
 # Future Improvements
 
 - LLM-based intelligent query rewriting.
